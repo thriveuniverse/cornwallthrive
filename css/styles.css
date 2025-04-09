@@ -1,0 +1,310 @@
+/* Main Styles for CornwallThrive.com */
+
+/* Global Styles */
+:root {
+    --primary-color: #1a75bc;
+    --secondary-color: #f2d694;
+    --accent-color: #5cb85c;
+    --light-color: #f8f9fa;
+    --dark-color: #333333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1567a7;
+    border-color: #1567a7;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+/* Navigation */
+.navbar-brand h1 {
+    font-size: 1.8rem;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cornwall_cliff.html');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.search-box {
+    border-radius: 10px;
+}
+
+/* Region Cards */
+.region-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.region-card:hover {
+    transform: translateY(-5px);
+}
+
+.region-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.north-cornwall {
+    background-image: url('images/cornwall_harbor.html');
+}
+
+.south-cornwall {
+    background-image: url('images/cornwall_beach_cove.html');
+}
+
+.west-cornwall {
+    background-image: url('images/cornwall_coast.html');
+}
+
+/* Business Cards */
+.business-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+}
+
+.business-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eden-project {
+    background-image: url('images/cornwall_village.html');
+}
+
+.seafood-restaurant {
+    background-image: url('images/cornwall_beach.html');
+}
+
+.headland-hotel {
+    background-image: url('images/cornwall_cliff.html');
+}
+
+/* Seasonal Cards */
+.seasonal-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.seasonal-card:hover {
+    transform: translateY(-5px);
+}
+
+.seasonal-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.autumn-beaches {
+    background-image: url('images/cornwall_beach_cove.html');
+}
+
+.food-festivals {
+    background-image: url('images/cornwall_village.html');
+}
+
+/* Deal Cards */
+.deal-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+}
+
+.deal-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.deal-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.surf-lesson {
+    background-image: url('images/cornwall_beach_walker.html');
+}
+
+.hotel-stay {
+    background-image: url('images/cornwall_cliff.html');
+}
+
+.cream-tea {
+    background-image: url('images/cornwall_village.html');
+}
+
+/* About Section */
+.about-image {
+    height: 400px;
+    background-image: url('images/cornwall_beach_cove.html');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section {
+        height: auto;
+    }
+    
+    .navbar .nav-link {
+        padding: 0.5rem;
+    }
+    
+    .about-image {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .region-image, 
+    .business-image, 
+    .seasonal-image, 
+    .deal-image {
+        height: 180px;
+    }
+    
+    .about-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .search-box {
+        padding: 15px !important;
+    }
+}

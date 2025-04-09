@@ -1,0 +1,59 @@
+/* Fix for Font Awesome .fa-rotate-by class error */
+.fa-rotate-by {
+    /* Replace the invalid transform value with a valid one */
+    transform: rotate(0deg); /* Default value when no custom angle is provided */
+}
+
+/* Custom CSS to ensure proper display of Font Awesome icons */
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-regular, .fa-light, .fa-brands {
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Additional fixes for any potential CSS warnings */
+.form-select {
+    appearance: auto; /* Use standard appearance instead of -webkit or -moz prefixes */
+}
+
+/* Ensure proper display on all browsers */
+* {
+    box-sizing: border-box;
+}
+
+/* Fix for deprecated properties */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Fix for listings filter layout - ensure items reflow properly without gaps */
+.row.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Hide filtered items completely without taking up space */
+.listing-card.filtered {
+    display: none;
+}
+
+/* Ensure the grid maintains proper spacing */
+@media (max-width: 768px) {
+    .row.listings-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .row.listings-container {
+        grid-template-columns: 1fr;
+    }
+}
